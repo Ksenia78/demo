@@ -1,0 +1,341 @@
+/* ОБЩЕЕ */
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif; 
+}
+span {
+	color: #bb1d1f;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.container {
+	width: 962px;
+	margin: 0 auto;
+}
+
+/* Шапка*/
+
+.header {
+	background: url(img/header/header_background.png) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	padding: 20px 0 60px 0;
+}
+.header_logo {
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+.header_number {
+	max-width: 480px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 12px 5px 30px 0;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	letter-spacing: 0.4px;
+}
+.header_number::before {
+	content: "";
+	width: 1px;
+	border: 15px solid rgba(255,255,255,0.8);
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	transform: translateY(50%);
+	position: absolute;
+	bottom: 50%;
+	right: 100%;
+}
+.header_number-text {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 44px;
+	
+}
+.header_number-tel {
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 700;
+	border-bottom: 5px dashed black;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 14px;
+}
+.header_form {
+	width: 710px;
+	padding: 39px 0 0;
+}
+.header_form-title {
+	margin-bottom: 42px;
+}
+.header_form-title-line {
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 300;
+	display: inline-block; 
+	margin-bottom: 12px;
+	padding: 0 34px 0 16px;	
+}
+.header_form-tel {
+	text-decoration: none;
+	color: black;
+	letter-spacing: -0.5px; 
+}
+.header_form-line-dop {
+	letter-spacing: -0.5px; 
+}
+.header_form-input {
+	width: 480px;
+	background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+	font-size: 36px;
+	text-indent: 24px;
+	margin-bottom: 36px;
+	color: black;
+	letter-spacing: -1.2px; 
+	font-weight: 300;
+	position: relative;
+}
+.header_form-bth {
+	width: 277px;
+	height: 46px;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #bb1d1f;
+	color: white;
+	margin-top: 3px;
+	box-shadow: 2px 2px 5px 0 black;
+	border-radius: 5px;
+	letter-spacing: -0.6px; 
+	cursor: pointer;
+}
+.nesessery{
+	background: url(img/header/star.png) no-repeat center left;
+    padding-left: 10px;
+}
+/* Наша работа */
+
+.work {
+	background-size: cover;
+	width: 100%;
+	padding: 40px 0;	
+}
+.work-title {
+	font-weight: lighter;
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: -0.5px;
+	margin-bottom: 60px;
+	text-indent: 2px;
+}
+.work_delails {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	letter-spacing: -0.1px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.work_delails-item {
+	width: 33.333333%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+
+}
+.work_delails-item-text {
+	margin-left: 14px;
+}
+
+/* ПРЕИМУЩЕСТВА*/
+
+.advantages {
+	background-color: #f7f7f7;	
+	background-size: cover;
+	width: 100%;
+	padding: 50px 0 26px 0;
+}
+.advantages_title {
+	font-weight: lighter;
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: -0.5px;
+	margin-bottom: 48px;
+	text-indent: 2px;
+	
+}
+.advantages_list {
+	padding-left: 80px;
+
+}
+.advantages_list-item {
+	padding-left: 23px;
+	text-transform: uppercase;
+	list-style: none;
+	list-style-image: url(img/section_advantages/check.png);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 42px;
+	letter-spacing: -0.6px;
+	margin-bottom: 30px;
+}
+
+/* ВОСКЛИЦАТЕЛЬНЫЙ ЗНАК */
+
+.reason  {
+	background-size: cover;
+	width: 100%;
+	padding: 107px 0 100px;
+}
+.reason_question {
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.9px;
+	padding-left: 155px;
+	
+	margin-bottom: 28px;
+}
+.reason_answer::before {
+	content: "!";
+	font-size: 260px;
+	font-weight: 600;
+	display: block;
+	position: absolute;
+	top: -200px;
+	left: 30px;
+}
+.reason_answer {
+	box-sizing: border-box;
+	border: 3px solid #ff9c00;
+	width: 840px;
+	padding: 21px 30px 0;
+	text-align: center;
+	margin: 0 60px 0 60px;
+	border-radius: 10px;
+	position: relative;
+}
+.reason_answer-italic {
+	font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    
+    position: relative; 
+    
+    padding: 0 0 36px 48px;
+}
+.reason_answer-italic::after {
+	content: " ";
+	display: block;
+	left: 343px;
+	bottom: 15px;
+	position: absolute;
+	width: 110px;
+	height: 3px;
+	background-color: black;
+}
+.reason_answer-bold {
+	font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 16px;
+    letter-spacing: -0.35px;
+}
+
+/* ОБРАТНАЯ СВЯЗЬ*/
+.feedback {
+	background-color: #bb1d1f;
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0 40px;
+}
+.feedback_text {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	letter-spacing: -0.3px;
+}
+.feedback_form {
+	display: flex;
+	justify-content: space-between;
+}
+.feedback_form-input {
+	width: 340px;
+	height: 40px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-indent: 14px;
+}
+.feedback_form-bth {
+	border: 2px solid white;
+	background: transparent;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 239px;
+	cursor: pointer;
+}
+
+/* ПОДВАЛ */
+.footer {
+	background-size: cover;
+	width: 100%;
+	padding: 40px 0;
+}
+.footer_logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_logo-avarcom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.footer_logo-avarcom-img {
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+.footer_logo-avarcom-tel {
+	text-decoration: none;
+	border-bottom: 2px dashed black;
+	line-height: 20px;
+	font-size: 22px;
+	color: black;
+	flex-shrink: 0;
+}
+.footer_logo-avarcom-text {
+	font-size: 21px;
+}
+.footer_logo-kontora {
+	color: #9b9b9b;
+}
+.footer_logo-kontora-text {
+	line-height: 10px;
+	font-size: 14px;
+	margin-top: -10px;
+}
